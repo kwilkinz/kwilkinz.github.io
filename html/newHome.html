@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <!-- <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com/css" /> find different family font -->
-        <link rel="stylesheet" href="../css/newMain.css" />
+        <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/responsive.css" />
         <link 
             href=link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" 
@@ -19,6 +19,9 @@
         <link 
             href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" 
             rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|
+        Source+Sans+Pro:300,900&display=swap" rel="stylesheet"
         />
     
         <title>Keri Wilkins-Portfolio</title>
@@ -37,6 +40,7 @@
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#languages" class="nav__link">Languages</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Contact Me</a></li>
                 </ul>
             </nav>
@@ -48,36 +52,113 @@
                 Hi, I am <strong>Keri Ann Wilkins</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">
-                front-end dev
+                FRONT-END DEVELOPER
             </p>
-            <img src="../images/Framed_shot.png" alt="a picture of Keri Ann smiling">
+            <img src="../images/Framed_shot.png" alt="a picture of Keri Ann smiling" class="intro__img"> 
         </section>
 
 
         <!-- Languages -->
         <section class="my-languages" id="languages">
-            <h2 class="languages__title section__title--languages">What I do</h2>
+            <h2 class="section__title section__title--languages">What I know</h2>
             <div class="language">
                 <div class="language">
-                   <h3></h3>
-                   <p></p> 
+                   <h3>JavaScript</h3>
+                   <p>My latest project using Javascript was....Lorem ipsum dolor sit amet, 
+                       consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                    </p> 
                 </div> <!-- / 1x languages -->
 
                 <div class="language">
-                    <h3></h3>
-                    <p></p> 
+                    <h3>React</h3>
+                    <p>SLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                        ut aliquip ex ea commodo consequat.
+                    </p> 
                  </div> <!-- / 2x languages -->
 
                  <div class="language">
-                    <h3></h3>
-                    <p></p> 
+                    <h3>Angular</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                        ut aliquip ex ea commodo consequat.
+                    </p> 
                  </div> <!-- / 3x languages -->
             </div> <!-- / of all languages-->
             <a href="#work" class="btn">My Work</a>
         </section>
 
+
+        <!-- About Me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I Am</h2>
+            <p class="section__subtitle section__subtitle--about">Designer & developer based out of Austin</p>
+
+            <div class="about-me__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <img src="../images/leaningVert.png" alt="Keri leaning against a wall" > <!--Vertical photo will go here -->
+        </section>
+
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My Work</h2>
+            <p class="section__subtitle"></p>
+
+            <div class="portfolio"></div>
+            <!-- Portfolio item 01 -->
+                <a href="#" class="portfolio__item">
+                    <img src="" alt=".." class="portfolio__img">
+                </a>
+
+            <!-- Portfolio item 02 -->
+                <a href="#" class="portfolio__item">
+                    <img src="" alt=".." class="portfolio__img">
+                </a>
+
+            <!-- Portfolio item 03 -->
+                <a href="#" class="portfolio__item">
+                    <img src="" alt=".." class="portfolio__img">
+                </a>
+
+            <!-- Portfolio item 04 -->
+                <a href="#" class="portfolio__item">
+                    <img src="" alt=".." class="portfolio__img">
+                </a>
+            </div>
+
+            <!-- Portfolio item 05 -->
+                <a href="#" class="portfolio__item">
+                    <img src="" alt=".." class="portfolio__img">
+                </a>
+            
+            <!-- Portfolio item 06 -->
+                <a href="#" class="portfolio__item">
+                    <img src="" alt=".." class="portfolio__img">
+                </a>
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <a href="mailto:keriannwilkins@gmail.com" class="footer__link">Email Me</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link"
+                href="https://github.com/kwilkinz">a</a></li>
+                <li class="social-list__item"><a class="social-list__link"
+                href="https://www.linkedin.com/in/keri-wilkins-683bb0230/">b</a></li>
+            </ul>
+        </footer>
     </body>
-
-
-
 </html>

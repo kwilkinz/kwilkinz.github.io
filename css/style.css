@@ -1,0 +1,162 @@
+*
+*::before
+*::after {
+    box-sizing: border-box; /*effects how padding is calculated. Not all togther */
+}
+
+/* Custom Properties, Update these for your own design */
+
+:root {  
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-third: 'Rock Salt', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #0F1626;
+    --clr-accent: #16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+            0.125em 0.125em 0.25em rgba(0,0,0,.15); /* box shadow */
+}
+
+@media (min-width: 800px) { /* Different Font Size for Different Devices */
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+
+/* General Styles */
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0; 
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section {  
+    padding: 5em 2em; /* Gives space to right & left all over page */
+}
+
+img {
+    display: block; /* gets rid of sum bugs with images later on */
+    max-width: 100%; /* so they dont overflow over parents */
+}
+
+
+
+/* Typography */ 
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+
+.section__title {
+    margin-bottom: .25em; 
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong {
+    display: block; /* the bold (name) always on the next line */
+}
+
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+
+
+
+
+/* Header Section */
+
+nav { display: none; }
+
+
+
+/* Intro Section Layout -- working with the overall box */
+ 
+.intro {
+    position: relative;
+}
+
+.intro__img {
+    box-shadow: var(--bs);
+}
+
+.section__subtitle--intro {
+    display: inline-block; /* width to be the size of itself when small */
+}
+
+@media (min-width: 600px) { /* 300, 600, 900 & up = Generic Rules */
+    .intro {
+        display: grid;
+        width: min-content; 
+        margin: 0 auto; /* section should match the content inside of it */
+        grid-column-gap: 1em; /* Gap from word to img */
+        grid-template-areas: 
+            "img title"
+            "img subtitle"; 
+        grid-template-columns: min-content max-content; /* shrink it down as much as it can & text will be max */ 
+    }
+
+    .intro__img { /* Will be the width of picture  */
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2; /* it will be on top */
+    }
+
+    .section__subtitle--intro {
+       align-self: start;  /* Helps the stretching */
+       grid-column: -1 / 1; /* This tells it to stretch all the way across (pass the img)*/
+       grid-row: 2;
+       text-align: right;
+       position: relative;
+       left: -1.5em;
+       width: calc(100% + 1.5em); /* wants it 100% but also needs left -1.5 */
+    }
+}
+
+
+/* Languages Section */
+
+.my-languages {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
