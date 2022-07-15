@@ -57,6 +57,30 @@ img {
     max-width: 100%; /* so they dont overflow over parents */
 }
 
+:focus { /* create border around when tab onto */
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer; /* In case you want to ever turn to real btn not link */
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform  200ms ease-in-out; /* Need this with :hover to enlarge */
+}
+
+.btn:hover {
+    transform: scale(1.1); /* when hovered it will scale up and down 1 */
+}
+
 
 
 /* Typography */ 
@@ -97,6 +121,8 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 
@@ -106,6 +132,7 @@ h3 { font-size: var(--fs-h3) }
 /* Header Section */
 
 nav { display: none; }
+
 
 
 
@@ -154,9 +181,140 @@ nav { display: none; }
 }
 
 
+
 /* Languages Section */
 
 .my-languages {
+    background-color: var(--clr-dark); /* In case it doesnt load img */
+    background-image: url(../images/languages-bg.jpg);
+    background-size: cover; /* So it doesnt repeat itself */
+    background-blend-mode: overlay; 
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--languages {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--languages::after { /* this is the line under the text */
+    content: ''; /* Psuedo Elements need to have this or they wont appear */
+    display: block;
+    width: 4em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.45;
+}
+
+/* Languages Section breaking into Collumns */
+
+.languages {
+    margin-bottom: 3em; /* distance from collumns */ 
+}
+
+.language {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .languages {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .language + .language { /* Looks at the siblings if yes adds to the left. */
+        margin-left: 2em;
+    }
+}
+
+
+
+
+/* About Me Section */
+
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-me__img {
+    box-shadow: var(--bs);
+}
+
+@media (min-width: 600px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    }
+    
+    .section__title--about {
+        grid-area: title;
+    }
+    
+    .section__subtitle--about {
+        grid-column: 1 / 1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+        padding-top: 10px;
+    }
+    
+    .about-me__img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+
+
+/* My Work */ 
+
+.my-work {  /*all background on this section */
     background-color: var(--clr-dark);
     color: var(--clr-light);
+    text-align: center;
+}
+
+.section__subtitle--work { /*"a seletion of my range.. */
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    max-width: 1000px; /*will stop at 3 or 4*/
+    margin: 0 auto;  
+}
+
+.portfolio__item {
+    background: var(--clr-accent);
+    overflow: hidden;
+    background-size: cover;
+}
+
+.portfolio__img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.portfolio__img:hover {
+    transform: scle(1.2);
+    opacity: .75;
 }
