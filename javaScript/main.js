@@ -1,6 +1,9 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 
+
+
+
 // 1. Function on click toggle the nav bar to open 
 navToggle.addEventListener('click', () => {             //when clicked complete function
     document.body.classList.toggle('nav-open');         //everytime click on button it 
@@ -12,3 +15,4 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');     //remove it when click on links
     })
 }); 
+
