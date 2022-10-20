@@ -474,7 +474,7 @@ ul {
 .project-box {
   width: 480px;
   padding: 15px;
-  border: 1px solid #8f5e5e;
+  border: 1px solid #16e0bd;;
   margin: 20px;
 }
 
@@ -508,21 +508,8 @@ ul {
   bottom: -18px;
   left: 0 auto;
   right: 0;
-  background-image: linear-gradient(
-    2deg,
-    hsl(0deg 2% 70%) 0%,
-    hsl(0deg 2% 69%) 24%,
-    hsl(0deg 1% 69%) 45%,
-    hsl(0deg 1% 68%) 58%,
-    hsl(0deg 0% 68%) 65%,
-    hsl(0deg 0% 67%) 70%,
-    hsl(0deg 1% 65%) 75%,
-    hsl(0deg 2% 62%) 80%,
-    hsl(0deg 2% 60%) 86%,
-    hsl(0deg 3% 57%) 93%,
-    hsl(0deg 3% 55%) 100%
-  );
-  color: black;
+  background-color: var(--clr-dark);
+  color: white;
   text-align: justify;
   padding-top: 20px;
   padding-left: 20px;
