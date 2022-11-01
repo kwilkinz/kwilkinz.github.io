@@ -77,7 +77,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
-  transition: transform 200ms ease-in-out; 
+  transition: transform 200ms ease-in-out;
 }
 
 .btn:hover {
@@ -113,7 +113,7 @@ h3 {
 }
 
 .section__title--intro strong {
-  display: block; 
+  display: block;
 }
 
 .section__subtitle {
@@ -240,7 +240,7 @@ header {
 
 .hamburger::before {
   top: 6px;
-} 
+}
 .hamburger::after {
   bottom: 6px;
 }
@@ -256,48 +256,47 @@ header {
 }
 
 .section__subtitle--intro {
-  display: inline-block; 
+  display: inline-block;
 }
 
-  .intro {
-    display: grid;
-    width: min-content;
-    margin: 0 auto; 
-    grid-column-gap: 1.5em; 
-    grid-template-areas:
-      "img title"
-      "img subtitle";
-    grid-template-columns: min-content max-content; 
-  }
+.intro {
+  display: grid;
+  width: min-content;
+  margin: 0 auto;
+  grid-column-gap: 1.5em;
+  grid-template-areas:
+    "img title"
+    "img subtitle";
+  grid-template-columns: min-content max-content;
+}
 
-  /* Will be the width of picture  */
-  .intro__img {
-    grid-area: img;
-    min-width: 250px;
-    position: relative;
-    z-index: 2; 
-    margin-left: -100px;
-    width: 300px;
-  }
+/* Will be the width of picture  */
+.intro__img {
+  grid-area: img;
+  min-width: 250px;
+  position: relative;
+  z-index: 2;
+  margin-left: -100px;
+  width: 300px;
+}
 
-  .section__subtitle--intro {
-    align-self: start; 
-    grid-column: -1 / 1; 
-    grid-row: 2;
-    text-align: right;
-    position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em); 
-    margin-top: -25px;
-  }
-
+.section__subtitle--intro {
+  align-self: start;
+  grid-column: -1 / 1;
+  grid-row: 2;
+  text-align: right;
+  position: relative;
+  left: -1.5em;
+  width: calc(100% + 1.5em);
+  margin-top: -25px;
+}
 
 /* Languages Section */
 
 .my-languages {
-  background-color: var(--clr-dark); 
+  background-color: var(--clr-dark);
   background-image: url(../images/languages-bg.jpg);
-  background-size: cover; 
+  background-size: cover;
   background-blend-mode: overlay;
   color: var(--clr-light);
   text-align: center;
@@ -310,7 +309,7 @@ header {
 
 /* this is the line under the text */
 .section__title--languages::after {
-  content: ""; 
+  content: "";
   display: block;
   width: 5em;
   height: 1px;
@@ -323,7 +322,6 @@ header {
 
 .languages {
   margin-bottom: 3em;
-  
 }
 
 .language {
@@ -332,26 +330,19 @@ header {
   margin: 0 auto;
 }
 
+.languages {
+  display: flex;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-
-  .languages {
-    display: flex;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Looks at the siblings if yes adds to the left. */
-  .language + .language {
-    margin-left: 2em;
-  }
-
-
-
-
+/* Looks at the siblings if yes adds to the left. */
+.language + .language {
+  margin-left: 2em;
+}
 
 /* About Me Section */
-
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
@@ -359,39 +350,43 @@ header {
 
 .about-me__img {
   box-shadow: var(--bs);
+  width: calc(100% + 200px);
 }
 
-@media (min-width: 600px) {
-  .about-me {
-      display: grid;
-      grid-template-columns: 1fr 200px;
-      grid-template-areas: 
-          "title img"
-          "subtitle img"
-          "text img";
-      grid-column-gap: 2em;
-  }
-  
-  .section__title--about {
-      grid-area: title;
-  }
-  
-  .section__subtitle--about {
-      grid-column: 1 / 1;
-      grid-row: 2;
-      position: relative;
-      left: -1em;
-      width: calc(100% + 2em);
-      padding-left: 1em;
-      padding-right: calc(200px + 4em);
-      padding-top: 10px;
-  }
-  
-  .about-me__img {
-      grid-area: img;
-      position: relative;
-      z-index: 2;
-  }
+.about-me__body {
+  font-size: 22px;
+  margin-left: -20px;
+  margin-top: -15px;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas:
+    "title img"
+    "subtitle img"
+    "text img";
+  grid-column-gap: 2em;
+}
+
+.section__title--about {
+  grid-area: title;
+}
+
+.section__subtitle--about {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  position: relative;
+  left: -1em;
+  padding-left: 1em;
+  padding-right: calc(200px + 1em);
+  padding-top: 10px;
+}
+
+.about-me__img {
+  grid-area: img;
+  position: relative;
+  z-index: 2;
 }
 
 /* My Work */
@@ -465,7 +460,7 @@ ul {
 .project-box {
   width: 480px;
   padding: 15px;
-  border: 1px solid #16e0bd;;
+  border: 1px solid #16e0bd;
   margin: 20px;
 }
 
@@ -479,8 +474,7 @@ ul {
 /* Project Section -> Images */
 
 .portfolio__img {
-  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), 
-  opacity 250ms linear;
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 
 .portfolio__img:hover,
@@ -516,15 +510,13 @@ ul {
   opacity: 1;
 }
 
-
-
 /* Footer Section */
 
 .footer {
   background: var(--clr-dark);
   color: var(--clr-accent);
   text-align: center;
-  padding: .5em 0 2.75em;
+  padding: 0.5em 0 2.75em;
   font-size: var(--fs-h3);
 }
 
