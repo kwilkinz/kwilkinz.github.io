@@ -56,19 +56,23 @@
         width: 100%;
         display: inline-block;
         flex-direction: column;
-        margin-left: 7rem;
+        margin-left: 8rem;
         margin-top: -45px;
     }
 
       .intro__img {
         width: 100%;
-        margin-left: .70rem;
+        margin-left: 1rem;
+      }
+
+      .section__subtitle--intro {
+        margin-top: 5px;
       }
 
 
     /** (Languages) - 3 Columns **/
     .my-languages {
-        width: calc(100% + 73%);
+      width: calc(100% + 300px)
     }
 
     .languages {
