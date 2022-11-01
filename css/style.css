@@ -369,8 +369,6 @@ header {
     margin-top: -15px;
 }
 
-
-@media (min-width: 600px) {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 200px;
@@ -400,7 +398,7 @@ header {
     position: relative;
     z-index: 2;
   }
-}
+
 
 /* My Work */
 
