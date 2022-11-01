@@ -95,7 +95,8 @@
 
     .about-me__body {
         font-size: 23px;
-        padding-right: 10px;
+        margin-top: 10px;
+        padding-right: 15px;
         padding-left: 10px;
     }
 

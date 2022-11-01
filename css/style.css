@@ -242,7 +242,7 @@ header {
   top: 6px;
 } 
 .hamburger::after {
-  bottom: 7px;
+  bottom: 6px;
 }
 
 /* Intro Section Layout -- working with the overall box */
@@ -259,7 +259,6 @@ header {
   display: inline-block; 
 }
 
-@media (min-width: 600px) {
   .intro {
     display: grid;
     width: min-content;
@@ -291,7 +290,7 @@ header {
     width: calc(100% + 1.5em); 
     margin-top: -25px;
   }
-}
+
 
 /* Languages Section */
 
@@ -360,47 +359,42 @@ header {
 
 .about-me__img {
   box-shadow: var(--bs);
- width: calc(100% + 200px);
 }
 
-.about-me__body {
-    font-size: 22px;
-    margin-left: -20px;
-    margin-top: -15px;
-}
-
+@media (min-width: 600px) {
   .about-me {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
-    grid-column-gap: 2em;
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      grid-template-areas: 
+          "title img"
+          "subtitle img"
+          "text img";
+      grid-column-gap: 2em;
   }
-
+  
   .section__title--about {
-    grid-area: title;
+      grid-area: title;
   }
-
+  
   .section__subtitle--about {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    position: relative;
-    left: -1em;
-    padding-left: 1em;
-    padding-right: calc(200px + 1em);
-    padding-top: 10px;
+      grid-column: 1 / 1;
+      grid-row: 2;
+      position: relative;
+      left: -1em;
+      width: calc(100% + 2em);
+      padding-left: 1em;
+      padding-right: calc(200px + 4em);
+      padding-top: 10px;
   }
-
+  
   .about-me__img {
-    grid-area: img;
-    position: relative;
-    z-index: 2;
+      grid-area: img;
+      position: relative;
+      z-index: 2;
   }
+}
 
-
-/* Projects */
+/* My Work */
 
 a {
   text-decoration: none;
@@ -508,7 +502,7 @@ ul {
   background-color: var(--clr-dark);
   color: white;
   text-align: justify;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   visibility: hidden;
