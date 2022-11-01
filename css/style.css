@@ -240,9 +240,9 @@ header {
 
 .hamburger::before {
   top: 6px;
-} /*height of 3+3=6*/
+} 
 .hamburger::after {
-  bottom: 6px;
+  bottom: 7px;
 }
 
 /* Intro Section Layout -- working with the overall box */
@@ -260,7 +260,6 @@ header {
 }
 
 @media (min-width: 600px) {
-  /* 300, 600, 900 & up = Generic Rules */
   .intro {
     display: grid;
     width: min-content;
@@ -335,7 +334,7 @@ header {
 }
 
 
-@media (min-width: 800px) {
+
   .languages {
     display: flex;
     max-width: 1300px;
@@ -347,7 +346,7 @@ header {
   .language + .language {
     margin-left: 2em;
   }
-}
+
 
 
 
@@ -511,7 +510,7 @@ ul {
   background-color: var(--clr-dark);
   color: white;
   text-align: justify;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
   visibility: hidden;

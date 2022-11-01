@@ -1,238 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="author" content="Keri Wilkins"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <!-- <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com/css" /> find different family font -->
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/responsive.css" />
-        <link 
-            href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" 
-            rel="stylesheet"
-        />   
-        <link 
-            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" 
-            rel="stylesheet"
-        />
-        <link 
-            href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" 
-            rel="stylesheet"
-        />
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|
-        Source+Sans+Pro:300,900&display=swap" rel="stylesheet"
-        />
-        <!--Font Awesome Kit-->
-        <script src="https://kit.fontawesome.com/feda39ad8c.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Keri Wilkins" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|
+        Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome Kit-->
+    <script
+      src="https://kit.fontawesome.com/feda39ad8c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Keri Wilkins-Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/Logo.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navagation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#languages" class="nav__link">Languages</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#project" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Keri Ann Wilkins</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        { Full-Stack Software Engineer }
+      </p>
+      <img
+        src="./images/Framed_shot.png"
+        alt="a picture of Keri Ann smiling"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- Languages -->
+    <section class="my-languages" id="languages">
+      <h2 class="section__title section__title--languages">What I know</h2>
+      <div class="languages">
+        <div class="language">
+          <h3>About</h3>
+          <p>
+            Full-Stack software engineer proficient in using Javascript for
+            front-end and back-end programming, React, HTML, CSS, API
+            implementing, Node.js, Express, PostgreSQL, and frameworks like
+            Bootstrap. Experience in project management gives an advantage in
+            finding solutions to problems and determining modifications for
+            optimal use of organizational data.
+          </p>
+        </div>
+        <!-- / 1x languages -->
+
+        <div class="language">
+          <h3>Code</h3>
+          <p>Frontend: HTML, CSS, Javascript, React, jQuery</p>
+          <p>Backend: Node.js, Express, RESTful APIs, PostgreSQL</p>
+          <p>
+            Tools: Mocha, Chai, Knex, Git, Github, Heroku, Node, Package
+            Manager, Visual Studio Code
+          </p>
+          <br />
+        </div>
+        <!-- / 2x languages -->
+
+        <div class="language">
+          <h3>Education</h3>
+          <p>
+            Full-Stack Software Engineering Program, 2022 <br />
+            Thinkful
+            <br />
+            <br />
+            Bachelor's in Criminology & Criminal Justice, 2021 <br />
+            Sonoma State University
+          </p>
+        </div>
+        <!-- / 3x languages -->
+      </div>
+      <!-- / of all languages-->
+      <a href="#project" class="btn">See My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I Am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Designer & developer based out of Austin, TX
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Just a Criminology major who fell in love with code. I spent my time
+          post-graduation learning all I could about web development with the
+          assistance of my trusty four-legged partner Dakota!
+        </p>
+        <p>
+          Languages, libraries, and frameworks come and go out of fashion. I
+          myself bring more to the table. I have a great respect for the
+          craftsmanship and complexity of development; When I began writing my
+          own code and fell in love with how it works, and how every design is a
+          piece of art.
+        </p>
+        <p>
+          I am an explorer and student at heart, and I'm looking for an
+          opportunity to keep growing.
+        </p>
+      </div>
+
+      <img
+        src="./images/maroonDress2.jpg"
+        alt="Keri leaning against a wall"
+        class="about-me__img"
+      />
+      <!--Vertical photo will go here -->
+    </section>
+
     
-        <title>Keri Wilkins-Portfolio</title>
+    <!-- My Work -->
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="../images/Logo.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navagation">
-                <span class="hamburger"></span> 
-            </button>        
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#languages" class="nav__link">Languages</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#project" class="nav__link">My Work</a></li>
-                    <!--<li class="nav__item"><a href="#" class="nav__link">Contact Me</a></li>-->
-                </ul>
-            </nav>
-        </header>
+    <!--====Projects Section =========-->
+    <section id="project">
+      <div class="project-heading">
+        <h3>My Projects</h3>
+        <p>A selection of my range of work</p>
 
-        <!--Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Keri Ann Wilkins</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">
-                { Full-Stack Software Engineer }
-            </p>
-            <img src="../images/Framed_shot.png" alt="a picture of Keri Ann smiling" class="intro__img"> 
-        </section>
+        <ul class="project-filter">
+          <li class="list project-filter-active" data-filter="all">All</li>
+          <li class="list" data-filter="front">Front-End</li>
+          <li class="list" data-filter="back">Back-End</li>
+          <li class="list" data-filter="full">Full-Stack</li>
+        </ul>
+      </div>
 
+      <div class="project-container">
+        <!----Box1-----(about-front)-->
+        <a href="https://github.com/kwilkinz/Flashcard_App" target="_blank" rel="noopener noreferrer" class="img__wrap project-box front">
+          <img
+            src="./images/flashcardPhoto.png"
+            alt="flashcard"
+            class="portfolio__img"
+          />
+          <p class="img__description">
+            Flashcard Application -- This was so much fun to develop! A simple application that allows
+            users to create, edit, and delete decks and cards within them. My favorite part about this project.
+          </p>
+        </a>
 
-        <!-- Languages -->
-        <section class="my-languages" id="languages">
-            <h2 class="section__title section__title--languages">What I know</h2>
-            <div class="languages">
-                <div class="language">
-                   <h3>About</h3>
-                   <p> Full-Stack software engineer proficient in using Javascript 
-                       for front-end and back-end programming, React, HTML, CSS, API 
-                       implementing, Node.js, Express, PostgreSQL, and frameworks like 
-                       Bootstrap. Experience in project management gives an advantage in 
-                       finding solutions to problems and determining modifications for 
-                       optimal use of organizational data.  
-                    </p> 
-                </div> <!-- / 1x languages -->
+        <!--Box 2 ------(about-back)-->
+        <a href="https://github.com/kwilkinz/Local-Library" target="_blank" rel="noopener noreferrer" class="img__wrap project-box back">
+          <img
+            src="./images/localLibrary.png"
+            alt="library"
+            class="portfolio__img"
+          />
+          <p class="img__description">
+            Local Library Application -- Simple and clean perfect for a tiny community that doesn't want to
+            lose track of their good books! My favorite part about this project.
+          </p>
+        </a>
 
-                <div class="language">
-                    <h3>Code</h3>
-                    <p> Frontend: HTML, CSS, Javascript, React, jQuery </p> 
-                    <p> Backend: Node.js, Express, RESTful APIs, PostgreSQL </p>
-                    <p> Tools: Mocha, Chai, Knex, Git, Github, Heroku, Node, Package Manager, Visual Studio Code </p>
-                <br> 
+        <!--Box 3---------(about-back-->
+        <a href="https://github.com/kwilkinz/decoderRing" target="_blank" rel="noopener noreferrer" class="img__wrap project-box back">
+          <img
+            src="./images/decorderRing.png"
+            alt="decorder"
+            class="portfolio__img"
+          />
+          <p class="img__description">
+            Decoder/Encode Application -- This application made me smile! I was back being a kid sending
+            encoded jokes to my friends. App is used to communicate and read
+            top-secret messages.
+          </p>
+        </a>
 
-                   
-                 </div> <!-- / 2x languages -->
+        <!--Box 4-----------(about-front)--->
+        <a href="https://github.com/kwilkinz/react-todo-app/tree/main/my-todo-app"  target="_blank" rel="noopener noreferrer" class="img__wrap project-box front">
+          <img
+            src="./images/TodoList copy.png"
+            alt="todo list"
+            class="portfolio__img"
+          />
+          <p class="img__description">
+            Todo Application -- I am a todo enthusiast, long lists means I'm never bored! So this
+            application allows users to create, and keep track of completed todos!
+          </p>
+        </a>
+      </div>
+    </section>
 
-                 <div class="language">
-                    <h3>Education</h3>
-                    <p> Full-Stack Software Engineering Program, 2022
-                        <br> Thinkful
-                        <br>
-                        <br> Bachelor's in Criminology & Criminal Justice, 2021
-                        <br> Sonoma State University
-                        
-                        
-                        
-                    </p> 
-                 </div> <!-- / 3x languages -->
-            </div> <!-- / of all languages-->
-            <a href="#work" class="btn">See My Work</a>
-        </section>
-
-
-        <!-- About Me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who I Am</h2>
-            <p class="section__subtitle section__subtitle--about">Designer & developer based out of Austin, TX</p>
-
-            <div class="about-me__body">
-                <p> Just a Criminology major who fell in love with code. I spent my time post-graduation
-                    learning all I could about web development with the assistance of my trusty four-legged
-                    partner Dakota! 
-                </p>
-                <p> Languages, libraries, and frameworks come and go out of fashion. I myself 
-                    bring more to the table. I have a great respect for the craftsmanship and 
-                    complexity of development; When I began writing my own code and fell in love 
-                    with how it works, and how every design is a piece of art. 
-                </p>
-                <p> I am an explorer and student at heart, and I'm looking for an opportunity to keep growing.  
-                </p>
-            </div>
-
-            <img src="../images/maroonDress2.jpg" alt="Keri leaning against a wall" class="about-me__img">  <!--Vertical photo will go here -->
-        </section>
+    <!--====== Footer ======-->
+    <footer class="footer">
+      <a href="mailto:keriannwilkins@gmail.com" class="footer__link"
+        >Email Me</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/kwilkinz">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/keri-wilkins-683bb0230/"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
 
-        <!-- My Work --> 
+    <!-- ===== ( JQuery For the Portfolio buttons ) ========= -->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".project-filter li").click(function () {
+          $(this)
+            .addClass("project-filter-active")
+            .siblings()
+            .removeClass("project-filter-active");
+        });
+      });
 
-          <!--====Projects Section =========-->
-         <section id="project">
-            <div class="project-heading">
-                <h3>My Projects</h3>
-                <p>A selection of my range of work</p>
+      $(document).ready(function () {
+        $(".list").click(function () {
+          const value = $(this).attr("data-filter");
+          if (value == "all") {
+            $(".project-box").show("1000");
+          } else {
+            $(".project-box")
+              .not("." + value)
+              .hide("1000");
+            $(".project-box")
+              .filter("." + value)
+              .show("1000");
+          }
+        });
+      });
 
-                <ul class="project-filter">
-                    <li class="list project-filter-active" data-filter="all">All</li>
-                    <li class="list" data-filter="front">Front-End</li>
-                    <li class="list " data-filter="back">Back-End</li>
-                    <li class="list" data-filter="full">Full-Stack</li>
-                </ul> 
-            </div> 
-          
-            <div class="project-container">
-                
-                <!----Box1-----(about-front)-->
-                <a href="" class="img__wrap project-box front">
-                    <img src="images/flashcardPhoto.png" alt="flashcard" class="portfolio__img">
-                    <p class="img__description">This was so much fun to develop! A simple application
-                        that allows users to create, edit, and delete decks and cards within them. My 
-                        favorite part about this project.
-                    </p>
-                </a>  
-    
-
-                <!--Box 2 ------(about-back)-->
-                <a href="" class="img__wrap project-box back">
-                    <img src="images/localLibrary.png" alt="library" class="portfolio__img">
-                    <p class="img__description">Simple and clean perfect for a tiny community that doesn't want to 
-                        lose track of their good books! My favorite part about this project.
-                    </p>
-                </a>
-
-                <!--Box 3---------(about-back-->
-                <a href="" class="img__wrap project-box back">
-                    <img src="images/decorderRing.png" alt="decorder" class="portfolio__img" >
-                    <p class="img__description">This application made me smile! I was back being a kid
-                    sending encoded jokes to my friends. App is used to communicate and read top-secret messages.
-                    </p>
-                </a>
-
-                <!--Box 4-----------(about-front)--->
-                <a href="" class="img__wrap project-box front">
-                    <img src="images/TodoList copy.png" alt="todo list" class="portfolio__img">
-                    <p class="img__description">I am a todo freak, love long lists means im never bored! 
-                        So this application allows users to create, and keep track of completed todos!
-                    </p>
-                </a>
-            
-            </div>
-
-        </section> 
-
-        <!-- ====JQuery For the buttons ========= -->
-            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-            <script type="text/javascript">
-
-                $(document).ready(function(){
-                    $(".project-filter li").click(function(){
-                        $(this).addClass("project-filter-active").siblings().removeClass("project-filter-active");
-                    })
-                })
-
-                $(document).ready(function(){
-                    $(".list").click(function(){
-                        const value = $(this).attr("data-filter");
-                        if(value == "all"){
-                            $(".project-box").show("1000");
-                        } else {
-                            $(".project-box").not("."+value).hide("1000");
-                            $(".project-box").filter("."+value).show("1000");
-                        }
-                    })
-                })
-
-            // <!-- ====JQuery Hamburger Menu ========= -->
-                // $(document).ready(function(){
-                //     $(".nav-toggle").click(function(){
-                //         $(this).toggleClass("nav-open");
-                //     })
-                // })
-            </script>
-    
-
-
-
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto:keriannwilkins@gmail.com" class="footer__link">Email Me</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/kwilkinz">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/keri-wilkins-683bb0230/">
-                        <i class="fa-brands fa-linkedin"></i> <!--from Font Awesome-->
-                    </a>
-                </li>
-            </ul>
-        </footer>
-
-
-        <script src="./javaScript/main.js"></script>
-
-    </body>
+      // <!--==== JQuery Hamburger Menu ========= -->
+      $(document).ready(function () {
+        $(".nav-toggle").click(function () {
+          $(document.body).toggleClass("nav-open");
+        });
+      });
+    </script>
+  </body>
 </html>
