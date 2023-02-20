@@ -24,6 +24,11 @@
         Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
     />
+
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+    rel="stylesheet"
+    />
     <!--Font Awesome Kit-->
     <script
       src="https://kit.fontawesome.com/feda39ad8c.js"
@@ -35,7 +40,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="./images/Logo.png" alt="" />
+        <!-- <img src="./images/Logo.png" alt="" /> -->
       </div>
       <button class="nav-toggle" aria-label="toggle navagation">
         <span class="hamburger"></span>
@@ -44,120 +49,49 @@
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#languages" class="nav__link">Languages</a>
+            <a href="#project" class="nav__link">Projects</a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About Me</a>
           </li>
-          <li class="nav__item">
-            <a href="#project" class="nav__link">My Work</a>
-          </li>
+          
         </ul>
       </nav>
     </header>
 
-    <!--Introduction -->
+    <!--========= Introduction ===========-->
     <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Keri Ann Wilkins</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">
-        { Frontend and UX Developer }
-      </p>
-      <img
-        src="./images/Framed_shot.png"
-        alt="a picture of Keri Ann smiling"
-        class="intro__img"
-      />
-    </section>
+      <div class="container">
+        <div class="two-col-grid">
+          <div class="inside-container-text">
+            <h1 class="h1-intro-title">
+              Hi, I'm <strong>Keri!</strong>
+            </h1>
+            <h4 class="h4-intro-text">
+              I'm a Frontend and UX Developer, currently learning Kotlin.
+              <br>
+              <br>
+              I strive to design meaningful and accessible websites that everyone can enjoy.
+            </h4>
+          </div>
 
-    <!-- Languages -->
-    <section class="my-languages" id="languages">
-      <h2 class="section__title section__title--languages">What I know</h2>
-      <div class="languages">
-        <div class="language">
-          <h3>About</h3>
-          <p>
-            Frontend and UI software engineer proficient in using Javascript for
-            front-end and back-end programming, React, HTML, CSS, API
-            implementing, Node.js, Express, PostgreSQL, and frameworks like
-            Bootstrap. Experience in project management gives an advantage in
-            finding solutions to problems and determining modifications for
-            optimal use of organizational data.
-          </p>
+          <div class="inside-container-image">
+            <img
+              src="./images/maroonDress2.jpg"
+              alt="a picture of Keri Ann smiling"
+              class="image"
+            />
+          </div>
         </div>
-        <!-- / 1x languages -->
-
-        <div class="language">
-          <h3>Code</h3>
-          <p>Frontend: HTML, CSS, Javascript, React, jQuery</p>
-          <p>Backend: Node.js, Express, RESTful APIs, PostgreSQL</p>
-          <p>
-            Tools: Mocha, Chai, Knex, Git, Github, Heroku, Node, Package
-            Manager, Visual Studio Code
-          </p>
-          <br />
-        </div>
-        <!-- / 2x languages -->
-
-        <div class="language">
-          <h3>Education</h3>
-          <p>
-            Software Engineering Program, 2022 <br />
-            Thinkful
-            <br />
-            <br />
-            Bachelor's in Criminology & Criminal Justice, 2021 <br />
-            Sonoma State University
-          </p>
-        </div>
-        <!-- / 3x languages -->
       </div>
-      <!-- / of all languages-->
-      <a href="#project" class="btn">See My Projects</a>
     </section>
 
-    <!-- About Me -->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I Am</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Designer & developer based out of Austin, TX
-      </p>
-      <img
-        src="./images/maroonDress2.jpg"
-        alt="Keri leaning against a wall"
-        class="about-me__img"
-      />
-      
-      <div class="about-me__body">
-        <p>
-          Just a Criminology major who fell in love with code. I spent my time
-          post-graduation learning all I could about web development with the
-          assistance of my trusty four-legged partner Dakota!
-        </p>
-        <p>
-          Languages, libraries, and frameworks come and go out of fashion. I
-          myself bring more to the table. I have a great respect for the
-          craftsmanship and complexity of development; When I began writing my
-          own code and fell in love with how it works, and how every design is a
-          piece of art.
-        </p>
-        <p>
-          I am an explorer and student at heart, and I'm looking for an
-          opportunity to keep growing.
-        </p>
-      </div>
 
-    </section>
-
-    
-    <!-- My Work -->
-
-    <!--====Projects Section =========-->
-    <section id="project">
+     <!--============= Projects  =============-->
+     <section id="project">
       <div class="project-heading">
-        <h3>My Projects</h3>
-        <p>A selection of my range of work</p>
+        <h3>Projects</h3>
+        <p>A collection of my recent work:</p>
 
         <ul class="project-filter">
           <li class="list project-filter-active" data-filter="all">All</li>
@@ -168,88 +102,141 @@
       </div>
 
       <div class="project-container">
+
+      <!--Box 6-----------(about-front & Back)--->
+      <a href="https://github.com/kwilkinz/TechyTips_blog"  target="_blank" rel="noopener noreferrer" class="img__wrap project-box front back">
+      <img
+        src="./images/TechyTips.png"
+        alt="todo list"
+        class="portfolio__img"
+      />
+      <div class="overlay">
+        <h4 class="text">Techy Tips Blog</h4>
+        <div class="secondary-small-button">
+          <div>Github Code</div> 
+          </div>
+      </div>
+    </a>
+    
         <!----Box1-----(about-front)-->
         <a href="https://github.com/kwilkinz/Flashcard_App" target="_blank" rel="noopener noreferrer" class="img__wrap project-box front">
-          <img
-            src="./images/flashcardPhoto.png"
+          <img 
+            src="./images/flashcard.png"
             alt="flashcard"
-            class="portfolio__img"
-          />
-          <p class="img__description">
-            Flashcard Application -- This was so much fun to develop! A simple application that allows
-            users to create, edit, and delete decks and cards within them. My favorite part about this project.
-          </p>
+            class="portfolio__img">
+            <div class="overlay">
+              <h4 class="text">Flashcard Application</h4>
+              <div class="secondary-small-button">
+               <div>Github Code</div> 
+              </div>
+            </div>
         </a>
 
         <!--Box 2 ------(about-back)-->
         <a href="https://github.com/kwilkinz/Local-Library" target="_blank" rel="noopener noreferrer" class="img__wrap project-box back">
           <img
-            src="./images/localLibrary.png"
+            src="./images/library.png"
             alt="library"
-            class="portfolio__img"
-          />
-          <p class="img__description">
-            Local Library Application -- Simple and clean perfect for a tiny community that doesn't want to
-            lose track of their good books! My favorite part about this project.
-          </p>
+            class="portfolio__img">
+            <div class="overlay">
+              <h4 class="text">Local Library Application</h4>
+              <div class="secondary-small-button">
+                <div>Github Code</div> 
+               </div>
+            </div>
         </a>
 
         <!--Box 3---------(about-back-->
         <a href="https://github.com/kwilkinz/decoderRing" target="_blank" rel="noopener noreferrer" class="img__wrap project-box back">
           <img
-            src="./images/decorderRing.png"
+            src="./images/decoder.png"
             alt="decorder"
             class="portfolio__img"
           />
-          <p class="img__description">
-            Decoder/Encode Application -- This application made me smile! I was back being a kid sending
-            encoded jokes to my friends. App is used to communicate and read
-            top-secret messages.
-          </p>
+          <div class="overlay">
+            <h4 class="text">Decoder/Encode Application</h4>
+            <div class="secondary-small-button">
+              <div>Github Code</div> 
+            </div>
+          </div>
         </a>
 
         <!--Box 4-----------(about-front)--->
         <a href="https://github.com/kwilkinz/react-todo-app/tree/main/my-todo-app"  target="_blank" rel="noopener noreferrer" class="img__wrap project-box front">
           <img
-            src="./images/TodoList copy.png"
+            src="./images/todolist.png"
             alt="todo list"
             class="portfolio__img"
           />
-          <p class="img__description">
-            Todo Application -- I am a todo enthusiast, long lists means I'm never bored! So this
-            application allows users to create, and keep track of completed todos!
-          </p>
+          <div class="overlay">
+            <h4 class="text">ToDo Tracker</h4>
+            <div class="secondary-small-button">
+              <div>Github Code</div> 
+             </div>
+          </div>  
         </a>
 
         <!--Box 5-----------(about-back)--->
         <a href="https://github.com/kwilkinz/grubDash-Express-Service"  target="_blank" rel="noopener noreferrer" class="img__wrap project-box back">
           <img
-            src="./images/grubDash.png"
+            src="./images/grubdash.png"
             alt="food delivery system"
             class="portfolio__img"
           />
-          <p class="img__description">
-            GrubDash Application -- Operates an online
-            food ordering and food delivery platform. 
-          </p>
+          <div class="overlay">
+            <h4 class="text">GrubDash Instant Delivery</h4>
+            <div class="secondary-small-button">
+              <div>Github Code</div> 
+             </div>
+          </div>
         </a>
 
-         <!--Box 6-----------(about-front & Back)--->
-         <a href="https://github.com/kwilkinz/TechyTips_blog"  target="_blank" rel="noopener noreferrer" class="img__wrap project-box front back">
-          <img
-            src="./images/TechyTips.png"
-            alt="todo list"
-            class="portfolio__img"
-          />
-          <p class="img__description">
-            Techy Tips Blog -- Created this for the community of developers! To share code, passions and create an open 
-            space to just write! It is also live on render.
-          </p>
-        </a>
+    
+      </div>
+    </section>
+  
+
+     <!--========= About  ===========-->
+    <section class="about-me" id="about">
+      <div class="container small-width">
+        <div class="container-3 w-container">
+          ::before
+          ::after
+        </div>
+        <div class="two-col-grid">
+          <div class="small-container">
+            <h2 class="h2-about-title">About me</h2>
+            <div class="about-me__body">
+              <p class="about-text">
+                Just a Criminology major who fell in love with code. I spent my time
+                post-graduation learning all I could about web development with the
+                assistance of my trusty four-legged partner Dakota!
+                <br>
+                <br>
+                Since then I have fell in love with how every design is a piece of art. Coding 
+                allows me to create that <strong>SMILE</strong> factor with intutitive designs.
+                <br>
+                <br>
+                I am an explorer and student at heart, and I'm looking for an
+                opportunity to keep growing.
+              </p>
+            </div>
+          </div>
+          <div class="small-container center-align">
+            <div class="about-image-circle">
+              <img
+              src="./images/Framed_shot.png"
+              alt="Keri leaning against a wall"
+              class="image-about"
+            />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!--====== Footer ======-->
+
+    <!--============ Footer ===========-->
     <footer class="footer">
       <a href="mailto:keriannwilkins@gmail.com" class="footer__link"
         >Email Me</a
