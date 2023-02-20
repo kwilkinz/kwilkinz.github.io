@@ -1,5 +1,18 @@
 /* Media Queries */ 
+@media screen and (max-width: 479px) {
+  .two-col-grid {
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .two-col-grid {
+    grid-auto-columns: auto;
+    grid-template-columns: 1fr;
+  }
+
+}
 
 @media only screen and (max-width: 600px) {
     .logo {
