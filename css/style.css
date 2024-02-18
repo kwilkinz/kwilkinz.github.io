@@ -13,6 +13,7 @@
 
   --clr-light: #fff;
   --clr-dark: #1f2336;
+  --clr-nav: #383f61;
   --clr-accent: #16e0bd;
 
   --fs-h1: 3rem;
@@ -132,11 +133,14 @@ h3 {
 }
 
 /* Header Section */
-
 header {
-  display: flex; /*header on same line*/
+  display: flex; 
   justify-content: space-between;
   padding: 1em;
+}
+
+strong#name {
+  color: var(--clr-accent);
 }
 
 .logo {
@@ -145,16 +149,16 @@ header {
 
 .nav {
   position: fixed;
-  background: var(--clr-dark);
+  background-color: var(--clr-nav);
+  opacity: 92%;
   color: var(--clr-light);
   top: 0;
   bottom: 0;
   /* left: 0; to have the nav on half screen turn off*/
-  width: 300px; /*(for the nav-open) */
+  width: 300px; 
   right: 0;
   z-index: 100;
-
-  transform: translateX(100%); /*nav disapears @ 100%*/
+  transform: translateX(100%); 
   transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
 
@@ -188,16 +192,17 @@ header {
   position: absolute;
   right: 1em;
   top: 2em;
-  z-index: 1000; /*you will always see button*/
+  z-index: 1000; 
 }
 
 .nav-open .nav {
   /*if the nav is open*/
-  transform: translateX(0); /*slides in and out*/
+  transform: translateX(0);
+  z-index: 200;
 }
 
 .nav-open .nav-toggle {
-  position: fixed; /*dont want it to scroll with the site but will scroll when open*/
+  position: fixed; 
 }
 
 .nav-open .hamburger {
@@ -213,7 +218,6 @@ header {
 }
 
 /* NAV Hamburger */
-
 .hamburger {
   display: block;
   position: relative;
@@ -409,7 +413,7 @@ ul {
   align-items: center;
   flex-direction: column;
   margin: 0px;
-  background-color: var(--clr-dark);
+  background-color: #2f3451;
   text-align: center;
 }
 .project-heading h3 {
@@ -432,6 +436,8 @@ ul {
   border: 1px solid rgba(237, 237, 237, 0.6);
   flex-wrap: wrap;
   margin: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .project-filter li {
@@ -439,7 +445,7 @@ ul {
   padding: 5px 20px;
   color: white;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 17px;
   letter-spacing: 0.5px;
   font-weight: 400;
   cursor: pointer;
