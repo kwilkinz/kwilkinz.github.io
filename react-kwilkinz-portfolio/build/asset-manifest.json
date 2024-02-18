@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ec7d096b.css",
+    "main.js": "/static/js/main.a8f63a1a.js",
+    "static/media/Framed_shot.png": "/static/media/Framed_shot.81fc94aabdea6f3bc9aa.png",
+    "static/media/maroonDress2.jpg": "/static/media/maroonDress2.5c3e97660c0ba9745d68.jpg",
+    "static/media/grubdash_X1.png": "/static/media/grubdash_X1.71ef7c98531b1ef8571c.png",
+    "static/media/TechyTips.png": "/static/media/TechyTips.60961c60c920aebc4f41.png",
+    "static/media/TodoList.png": "/static/media/TodoList.de6e9e419a4f1e4fe1a5.png",
+    "static/media/library.png": "/static/media/library.3c3e34586e9a2efcec90.png",
+    "static/media/2024_Frontend_Developer-keri-wilkins-resume.docx.pdf": "/static/media/2024_Frontend_Developer-keri-wilkins-resume.docx.931fddaa3c6e871dbed5.pdf",
+    "static/media/decoder.png": "/static/media/decoder.748d26564b12766765c6.png",
+    "static/media/flashcard.png": "/static/media/flashcard.df836098b594d17c13eb.png",
+    "index.html": "/index.html",
+    "main.ec7d096b.css.map": "/static/css/main.ec7d096b.css.map",
+    "main.a8f63a1a.js.map": "/static/js/main.a8f63a1a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec7d096b.css",
+    "static/js/main.a8f63a1a.js"
+  ]
+}
