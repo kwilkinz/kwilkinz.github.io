@@ -11,6 +11,7 @@ import ProjectFilter from "./Project_Filter.jsx";
 function App() {
   return (
     <div>
+      <div id="wrapper">
       <header>
         <meta charSet="UTF-8" />
         <meta name="author" content="Keri Wilkins" />
@@ -57,6 +58,7 @@ function App() {
       <ProjectFilter />
       <About />
       <Footer />
+    </div>
     </div>
   );
 }

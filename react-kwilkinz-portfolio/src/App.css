@@ -601,11 +601,36 @@ ul {
 }
 
 /* Media Queries */
+/* @media screen and (max-width: 350px) {
+  section#home {
+    min-width: 335px;
+  }
+} */
+body {
+  overflow-x: hidden; /* or overflow: hidden; depending on your needs */
+}
+
+
+
 @media screen and (max-width: 479px) {
   .two-col-grid {
     grid-row-gap: 30px;
     grid-template-columns: 1fr;
   }
+  section#home {
+    min-width: 335px;
+  }
+  button.nav-toggle {
+    display: none;
+}
+h4.h4-intro-text {
+  font-size: 12px;
+  width: 300px;
+}
+#wrapper {
+ max-width: 300px;
+ overflow: auto;
+}
 }
 
 @media screen and (max-width: 767px) {
